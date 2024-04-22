@@ -1,0 +1,23 @@
+---
+const overskrift = Astro.props.overskrift;
+const tekst = Astro.props.tekst;
+---
+<article class="tekst">
+    <h2 class="overskrift">{overskrift}</h2>
+    <p>{tekst}</p>
+</article>
+
+<style>
+	.tekst{
+        color: black;
+		max-width: 500px;
+		margin-right: auto;
+		margin-left: auto;
+		padding-top: 100px;
+	}
+
+    .overskrift{
+        margin-right: auto;
+        margin-right: auto;
+    }
+</style>
