@@ -1,5 +1,7 @@
 ---
 import Tekst from "../components/Tekst.astro";
+import Collage from "../components/Collage.astro";
+import Products from "../components/Products.astro";
 ---
 
 <html lang="en">
@@ -11,19 +13,27 @@ import Tekst from "../components/Tekst.astro";
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>webfeat</h1>
+		<!-- <h1>webfeat</h1> -->
 		<main>
 			<div class="pink_background">
 				<div class="space_top">
 				<Tekst overskrift="KVINDERNES ROLLER HOS ITMV" tekst="På værkstederne udgør de ansatte kvinder en afgørende del af arbejdsstyrken, hvor de deltager i produktionen af forskellige produkter til virksomhedskunder, institutioner og designere samt til virksomhedens egen webshop og butik. En central del af deres arbejde er at genanvende tekstiler, og her spiller det dygtige designteam en nøglerolle i at skabe produkter, der matcher de materialer, de har til rådighed, med de mennesker, der deltager i produktionen. Virksomheden lægger stor vægt på at oplære og integrere de ansatte kvinder i alle aspekter af arbejdet på værkstederne. De bliver gradvist indført i arbejdsfællesskabet og produktionen, samtidig med at de udvikler deres færdigheder, opnår sikkerhed og selvstændighed i udførelsen af opgaverne. Eksemplerne på de arbejdsopgaver, de ansatte kvinder udfører, spænder bredt fra at klippe stof og forberede syopgaver til at sortere materialer, assistere i butikken og udføre lettere rengøring. Deres bidrag omfatter også mere kreative opgaver som syning, broderi og plantefarvning, som er med til at skabe unikke og værdifulde produkter."/>
 				</div>
-				<img src="../components/" alt="Italian Trulli">
-			</div>
-
-
+				<Collage></Collage>
+				<Tekst overskrift="OLENAS PERSPEKTIV" tekst="Endelig er det vigtigt at give kvinderne mulighed for at dele deres egne historier, udfordringer og triumfer hos I tråd med verden. For dem repræsenterer virksomheden ikke blot et sted at arbejde, men et fællesskab, hvor de kan vokse og blomstre både personligt og professionelt. Deres håb og ambitioner for fremtiden er en integreret del af virksomhedens fortsatte udvikling og succes."/>
+				<div class="interview_video">
+				</div>
+				<Products></Products>
 			<div class="blue_background">
-
+				<div class="collage_products">
+				</div>
+				<div class="space_text">
+				<Tekst overskrift="ROSKILDE BANNER TIL BÆREDYGTIG MODE" tekst="SOM EN AF DE NYESTE COLLAB DE ARBEJDER PÅ - Et år efter at kunstneren Kinga Bartis prydede Roskilde Festivals himmel med sit imponerende banner, genopliver I Tråd med Verden nu hendes værk på en unik måde. Det ikoniske banner, der engang svævede højt over festivalpladsen, bliver nu forvandlet til trendy og bæredygtige tasker, takket være et innovativt samarbejde mellem den bæredygtige virksomhed og festivalen. Det ikoniske banner, der tidligere fungerede som en skinnende markør over festivalpladsen, blev skabt af kunstneren Kinga Bartis som en hyldest til musik og kreativitet. Nu, takket være I Tråd med Verdens indsats, bliver dette kunstværk genfødt som en række unikke tasker, der bærer historien og ånden fra festivalen med sig."/>
+				</div>
 			</div>
+	
+			</div>
+	
 		</main>
 	</body>
 </html>
@@ -35,16 +45,47 @@ import Tekst from "../components/Tekst.astro";
   margin: 0;
   padding: 0;
 }
+
+
 	.pink_background{
 		background-image: url("/svg/colored_social_indsats\ 1.svg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		width: 100%;
-		height: 3000px;
+		height: 2800px;
+	}
+
+	.blue_background{
+		background-color: #3E5c6d;
+		width: 100%;
 	}
 	.space_top{
-		padding-top: 400px;
+		padding-top: 500px;
+	}
+	.space_text{
+		padding-top: 50px;
 	}
 
-
+	.interview_video{
+		background-color: grey;
+		width: 60%;
+		height: 500px;
+		margin:auto;
+	}
+	@media only screen and (max-width: 600px){
+		.tekst{
+			padding: 10px;
+		}
+		.pink_background{
+			background-size: contain;
+		}
+		.space_top{
+		padding-top: 200px;
+	}
+	.interview_video{
+		width: auto;
+		height: 300px;
+		margin: 0 15px 0 15px;
+	}
+}
 </style>
