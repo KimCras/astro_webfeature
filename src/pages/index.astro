@@ -2,6 +2,8 @@
 import Tekst from "../components/Tekst.astro";
 import Collage from "../components/Collage.astro";
 import Products from "../components/Products.astro";
+import Dashline from "../components/Dashline.astro";
+import Stoet from "../components/Stoet.astro";
 ---
 
 <html lang="en">
@@ -17,22 +19,38 @@ import Products from "../components/Products.astro";
 		<main>
 			<div class="pink_background">
 				<div class="space_top">
-				<Tekst overskrift="KVINDERNES ROLLER HOS ITMV" tekst="På værkstederne udgør de ansatte kvinder en afgørende del af arbejdsstyrken, hvor de deltager i produktionen af forskellige produkter til virksomhedskunder, institutioner og designere samt til virksomhedens egen webshop og butik. En central del af deres arbejde er at genanvende tekstiler, og her spiller det dygtige designteam en nøglerolle i at skabe produkter, der matcher de materialer, de har til rådighed, med de mennesker, der deltager i produktionen. Virksomheden lægger stor vægt på at oplære og integrere de ansatte kvinder i alle aspekter af arbejdet på værkstederne. De bliver gradvist indført i arbejdsfællesskabet og produktionen, samtidig med at de udvikler deres færdigheder, opnår sikkerhed og selvstændighed i udførelsen af opgaverne. Eksemplerne på de arbejdsopgaver, de ansatte kvinder udfører, spænder bredt fra at klippe stof og forberede syopgaver til at sortere materialer, assistere i butikken og udføre lettere rengøring. Deres bidrag omfatter også mere kreative opgaver som syning, broderi og plantefarvning, som er med til at skabe unikke og værdifulde produkter."/>
+				<Tekst overskrift="KVINDERNES ROLLER HOS ITMV" tekst="På værkstederne udgør de ansatte kvinder en afgørende del af arbejdsstyrken, hvor de deltager i produktionen af forskellige produkter til virksomhedskunder, institutioner og designere samt til virksomhedens egen webshop og butik. En central del af deres arbejde er at genanvende tekstiler, og her spiller det dygtige designteam en nøglerolle i at skabe produkter, der matcher de materialer, de har til rådighed, med de mennesker, der deltager i produktionen." secondtekst="Virksomheden lægger stor vægt på at oplære og integrere de ansatte kvinder i alle aspekter af arbejdet på værkstederne. De bliver gradvist indført i arbejdsfællesskabet og produktionen, samtidig med at de udvikler deres færdigheder, opnår sikkerhed og selvstændighed i udførelsen af opgaverne." thirdtekst="Eksemplerne på de arbejdsopgaver, de ansatte kvinder udfører, spænder bredt fra at klippe stof og forberede syopgaver til at sortere materialer, assistere i butikken og udføre lettere rengøring. Deres bidrag omfatter også mere kreative opgaver som syning, broderi og plantefarvning, som er med til at skabe unikke og værdifulde produkter."/>
 				</div>
 				<Collage></Collage>
 				<Tekst overskrift="OLENAS PERSPEKTIV" tekst="Endelig er det vigtigt at give kvinderne mulighed for at dele deres egne historier, udfordringer og triumfer hos I tråd med verden. For dem repræsenterer virksomheden ikke blot et sted at arbejde, men et fællesskab, hvor de kan vokse og blomstre både personligt og professionelt. Deres håb og ambitioner for fremtiden er en integreret del af virksomhedens fortsatte udvikling og succes."/>
 				<div class="interview_video">
 				</div>
 				<Products></Products>
+			</div>
+
 			<div class="blue_background">
 				<div class="collage_products">
 				</div>
 				<div class="space_text">
-				<Tekst overskrift="ROSKILDE BANNER TIL BÆREDYGTIG MODE" tekst="SOM EN AF DE NYESTE COLLAB DE ARBEJDER PÅ - Et år efter at kunstneren Kinga Bartis prydede Roskilde Festivals himmel med sit imponerende banner, genopliver I Tråd med Verden nu hendes værk på en unik måde. Det ikoniske banner, der engang svævede højt over festivalpladsen, bliver nu forvandlet til trendy og bæredygtige tasker, takket være et innovativt samarbejde mellem den bæredygtige virksomhed og festivalen. Det ikoniske banner, der tidligere fungerede som en skinnende markør over festivalpladsen, blev skabt af kunstneren Kinga Bartis som en hyldest til musik og kreativitet. Nu, takket være I Tråd med Verdens indsats, bliver dette kunstværk genfødt som en række unikke tasker, der bærer historien og ånden fra festivalen med sig."/>
+					<Tekst overskrift="ROSKILDE BANNER TIL BÆREDYGTIG MODE" tekst="SOM EN AF DE NYESTE COLLAB DE ARBEJDER PÅ - Et år efter at kunstneren Kinga Bartis prydede Roskilde Festivals himmel med sit imponerende banner, genopliver I Tråd med Verden nu hendes værk på en unik måde. Det ikoniske banner, der engang svævede højt over festivalpladsen, bliver nu forvandlet til trendy og bæredygtige tasker, takket være et innovativt samarbejde mellem den bæredygtige virksomhed og festivalen." secondtekst="Det ikoniske banner, der tidligere fungerede som en skinnende markør over festivalpladsen, blev skabt af kunstneren Kinga Bartis som en hyldest til musik og kreativitet. Nu, takket være I Tråd med Verdens indsats, bliver dette kunstværk genfødt som en række unikke tasker, der bærer historien og ånden fra festivalen med sig."/>
+				</div>
+
+				<article class="repair_service">
+					<Tekst overskrift="REPAIR SERVICE LIGE TIL DØREN" tekst="Har du nogensinde tænkt over, hvad der sker med det tøj, du ikke længere bruger på grund af en lille rift eller en defekt lynlås? I Tråd med Verden tilbyder en unik reparationsservice direkte på din arbejdsplads, hvilket gør det nemt for dine medarbejdere at genanvende deres tøj og bidrage til en mere bæredygtig fremtid." secondtekst="Denne service gør genanvendelse let og tilgængeligt for dine medarbejdere, hvilket ikke kun reducerer spild, men også styrker din virksomheds miljømæssige og sociale ansvar (ESG) mål. Ved at samarbejde med I Tråd med Verden støtter du også deres vigtige arbejde med at skabe flere lønnede timer til syersker, hvilket er afgørende for at opretholde et retfærdigt og bæredygtigt arbejdsmiljø." thirdtekst="Med et dedikeret team bestående af erfarne syersker og en kreativ designer tilbyder I Tråd med Verden en bred vifte af reparationer, tilpasninger og fornyelser af tøj. Fra simple oplægninger til mere komplekse opgaver som reparation af lynlåse og broderi - de sidder klar ved symaskinerne for at forlænge levetiden på dine medarbejderes tøj på en stilfuld og funktionel måde." fourthtekst="Reparationsservicen bringes direkte til din virksomheds lokaler i Københavnsområdet, og med let adgang til offentlig transport er det bekvemt for alle. Ved at aftale en fast dag, f.eks. hver anden uge eller en gang om måneden, kan dine medarbejdere nemt droppe ind med deres tøj om morgenen og afhente det igen senere samme dag - så let kan det være!"/>
+				</article>
+				<div class="space_text">
+				<Dashline></Dashline>
+				<Tekst overskrift="SKAL VI SAMARBEJDE?" tekst="Bliv en del af 'I Tråd med Verden's bevægelse mod bæredygtighed og socialt ansvar. Med samarbejdspartnere som Tivoli, IKEA, Uniqlo og Roskilde Festival, er de allerede på vej mod en bedre fremtid." secondtekst="Kontakt dem i dag ved at klikke en af disse ikoner, hvor du kan være med!"/>
+				<Stoet></Stoet>
+				<Dashline></Dashline>
 				</div>
 			</div>
+
+			<footer>
+
+			</footer>
+
 	
-			</div>
 	
 		</main>
 	</body>
@@ -46,16 +64,16 @@ import Products from "../components/Products.astro";
   padding: 0;
 }
 
-
 	.pink_background{
 		background-image: url("/svg/colored_social_indsats\ 1.svg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		width: 100%;
-		height: 2800px;
+		height: auto;
 	}
 
 	.blue_background{
+		position: relative;
 		background-color: #3E5c6d;
 		width: 100%;
 	}

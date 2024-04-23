@@ -1,10 +1,16 @@
 ---
 const overskrift = Astro.props.overskrift;
 const tekst = Astro.props.tekst;
+const secondtekst = Astro.props.secondtekst;
+const thirdtekst = Astro.props.thirdtekst;
+const fourthtekst = Astro.props.fourthtekst;
 ---
 <article class="tekst">
     <h2 class="overskrift">{overskrift}</h2>
     <p>{tekst}</p>
+    <p>{secondtekst}</p>
+    <p>{thirdtekst}</p>
+    <p>{fourthtekst}</p>
 </article>
 
 <style>
